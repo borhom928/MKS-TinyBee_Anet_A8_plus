@@ -1,3 +1,25 @@
+These files are moded file for anet a8 plus with MKS tinybee.
+No bltouch (yet), No filament runout sensor (yet), everything from original anet a8 plus settings and tinybee manual.
+
+==========
+In order to avoid esp32 complie error, refer to this page https://github.com/MarlinFirmware/Marlin/issues/25767 
+The arthur  
+thisiskeithb says
+Also:
+
+    Delete the hidden .pio folder at the root of your Marlin project.
+    Delete the hidden .platformio folder from your User directory:
+        Windows: %USERPROFILE%\.platformio\
+        macOS, Unix, Unix-like: ~/.platformio/
+    Re-install PlatformIO.
+
+This will force all new downloads of libraries / toolchains & reset PlatformIO in case anything is broken there.
+==========
+
+Just delete the .pio and .platformio folder, close the vs code, and restart vs code, platformio will automatically pull all the files while it starts.
+
+==================================
+
 # MKS-TinyBee
   - MKS TinyBee is a mainboard for 3d printing, based on ESP32 module. Support Marlin2.0 firmware, in addition to ordinary LCD2004, 12864 screens, it also supports MKS MINI12864 V3, and MKS TFT serial screen, and MKS H43. The firmware can be updated via USB. Can be connected to WIFI, web page control printing. 
   - MKS TinyBee小蜜蜂主板，是一款集成ESP32 wifi模块的3D打印控制板。支持Marlin 2.0固件，除了支持普通的LCD2004,12864之外，还支持了MKS MINI12864 V3，并且，可以使用MKS TFT串口屏、MKS H43。固件更新可以使用USB直接下载，可以连接wifi进行网页控制打印。
